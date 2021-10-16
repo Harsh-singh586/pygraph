@@ -50,7 +50,7 @@ g1.adddata('line', 'test', [8, 7], ['red', 'blue'])
 pygraph.show([g1])
 ```
 
-You can see your graph on http://localhost:8000
+You can see your graph on http://localhost:8080
 
 NOTE:
    
