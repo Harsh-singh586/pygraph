@@ -11,8 +11,7 @@ import pygraph
 g1 = pygraph.graph(name , x-xis)
 g1.adddata(graph_type , lebel, y-axis, background_color)
 g1.adddata(graph_type , lebel, y-axis, background_color)
-graph1 = g1.getgraph()
-pygraph.show([graph1])
+pygraph.show([g1])
 ```
 
 Example Single Graph
@@ -23,8 +22,7 @@ import pygraph
 
 g1 = pygraph.graph('first', ['firstval', 'secval'])
 g1.adddata('bar', 'test', [4, 3], ['yellow', 'green'])
-graph1 = g1.getgraph()
-pygraph.show([graph1])
+pygraph.show([g1])
 ```
 
 Example Muptiple Graph
@@ -35,11 +33,9 @@ import pygraph
 
 g1 = pygraph.graph('first', ['firstval', 'secval'])
 g1.adddata('bar', 'test', [4, 3], ['yellow', 'green'])
-graph1 = g1.getgraph()
 g2 = pygraph.graph('second', ['firstval', 'secval'])
-g1.adddata('bar', 'test', [8, 7], ['yellow', 'green'])
-graph2 = g2.getgraph()
-pygraph.show([graph1, graph2])
+g2.adddata('bar', 'test', [8, 7], ['yellow', 'green'])
+pygraph.show([g1, g2])
 ```
 
 Example Mixed Graph
@@ -51,8 +47,7 @@ import pygraph
 g1 = pygraph.graph('first', ['firstval', 'secval'])
 g1.adddata('bar', 'test', [4, 3], ['yellow', 'green'])
 g1.adddata('line', 'test', [8, 7], ['red', 'blue'])
-graph1 = g1.getgraph()
-pygraph.show([graph1])
+pygraph.show([g1])
 ```
 
 You can see your graph on http://localhost:8000
